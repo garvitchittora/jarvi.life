@@ -123,7 +123,7 @@
             <div class="single-row">
                 {% for image in row.image %}
                 <div>
-                    <img src='{{image.url}}'/>
+                    <img src='{{image.url}}' alt='{{image.alt}}'/>
                     <p>{{image.alt}}</p>
                 </div>
                 {% endfor %}
@@ -132,7 +132,7 @@
             <div class="double-row">
                 {% for image in row.image %}
                 <div>
-                    <img src='{{image.url}}'/>
+                    <img src='{{image.url}}' alt='{{image.alt}}'/>
                     <p>{{image.alt}}</p>
                 </div>
                 {% endfor %}
