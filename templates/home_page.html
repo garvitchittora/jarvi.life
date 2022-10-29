@@ -118,120 +118,27 @@
     <div class="section">
         <h2>Pic 🍂</h2>
         <div class="jarvi-images">
+            {% for row in content %}
+            {% if row.type == 1 %}
             <div class="single-row">
+                {% for image in row.image %}
                 <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/mom.webp"/>
-                    <p>smol jarvi w mom & bro</p>
+                    <img src='{{image.url}}'/>
+                    <p>{{image.alt}}</p>
                 </div>
+                {% endfor %}
             </div>
+            {% else %}
             <div class="double-row">
+                {% for image in row.image %}
                 <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/angry.webp"/>
-                    <p>angry jarvi</p>
+                    <img src='{{image.url}}'/>
+                    <p>{{image.alt}}</p>
                 </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/cry.webp"/>
-                    <p>crying jarvi</p>
-                </div>
+                {% endfor %}
             </div>
-            <div class="double-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/dad.webp"/>
-                    <p>smol jarvi w dad</p>
-                </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/smile.webp"/>
-                    <p>smiling jarvi</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/class5.webp"/>
-                    <p>class 5</p>
-                </div>
-            </div>
-            <div class="double-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/effe.webp"/>
-                    <p>first effe</p>
-                </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/jhalwa.webp"/>
-                    <p>jhalwa ppl at iitk</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/headout.webp"/>
-                    <p>headout party</p>
-                </div>
-            </div>
-            <div class="double-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/gh_cordi.webp"/>
-                    <p>geekhaven coordis :)</p>
-                </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/gh.webp"/>
-                    <p>geekhaven team </p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/hint.webp"/>
-                    <p>hint party</p>
-                </div>
-            </div>
-            <div class="double-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/dharamshala.webp"/>
-                    <p>dharamshala trip</p>
-                </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/blr_iiita.webp"/>
-                    <p>iiita in blr</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/gs.webp"/>
-                    <p>gs ppl</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/many.webp"/>
-                    <p>many ppl</p>
-                </div>
-            </div>
-            <div class="double-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/somewhere.webp"/>
-                    <p>hrsss took us somewhere</p>
-                </div>
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/somewhere2.webp"/>
-                    <p>somewhere 2</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/goa.webp"/>
-                    <p>goa trip</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/core.webp"/>
-                    <p>core team ♡</p>
-                </div>
-            </div>
-            <div class="single-row">
-                <div>
-                    <img src="https://jarvi-life.s3.us-east-1.amazonaws.com/hackout.webp"/>
-                    <p>hackout'22</p>
-                </div>
-            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
     

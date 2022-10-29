@@ -1,0 +1,161 @@
+[
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/mom.webp",
+        "alt": "smol jarvi w mom & bro"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/angry.webp",
+        "alt": "angry jarvi"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/cry.webp",
+        "alt": "crying jarvi"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/dad.webp",
+        "alt": "smol jarvi w dad"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/smile.webp",
+        "alt": "smiling jarvi"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/class5.webp",
+        "alt": "class 5"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/effe.webp",
+        "alt": "first effe"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/jhalwa.webp",
+        "alt": "jhalwa ppl at iitk"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/headout.webp",
+        "alt": "headout party"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/gh_cordi.webp",
+        "alt": "geekhaven coordis :)"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/gh.webp",
+        "alt": "geekhaven team"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/hint.webp",
+        "alt": "hint party"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/dharamshala.webp",
+        "alt": "dharamshala trip"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/blr_iiita.webp",
+        "alt": "iiita in blr"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/gs.webp",
+        "alt": "gs ppl"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/many.webp",
+        "alt": "many ppl"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/somewhere.webp",
+        "alt": "hrsss took us somewhere"
+      },
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/somewhere2.webp",
+        "alt": "somewhere 2"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/goa.webp",
+        "alt": "goa trip"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/core.webp",
+        "alt": "core team ♡"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "image": [
+      {
+        "url": "https://jarvi-life.s3.us-east-1.amazonaws.com/hackout.webp",
+        "alt": "hackout'22"
+      }
+    ]
+  }
+]
