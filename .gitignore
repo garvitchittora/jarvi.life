@@ -1,3 +1,4 @@
 jarvi_life_env
 migrations
 .DS_Store
+__pycache__

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    
+    <meta name="title" content="{{name}}">
+    {% if name == "jarvi" %}
+    <meta
+		content="Garvit Chittora | IIITA | Developer"
+		name="description" />
+    <meta content="Garvit Chittora" name="author" />
+	<meta
+		content="Garvit Chittora, garvitchittora, garvit chittora, IIITA, webdeveloper, geekhaven, hackinthenorth, frontend developer, backend developer"
+		name="keywords" />
+
+	<meta name="owner" content="Garvit Chittora,garvitchittora2016@gmail.com">
+	<meta name="reply-to" content="garvitchittora2016@gmail.com">
+	<meta name="copyright"content="Garvit Chittora">
+
+	<meta name="og:title" content="Garvit Chittora"/>
+	<meta name="og:type" content="website"/>
+	<meta name="og:url" content="https://www.jarvi.life/"/>
+	<meta name="og:image" content="https://jarvi-life.s3.us-east-1.amazonaws.com/jarvi.webp"/>
+	<meta name="og:description" content="Garvit Chittora | IIITA | Developer"/>
+
+	<meta name="twitter:title" content="Jarvi">
+	<meta name="twitter:description" content="Garvit Chittora | IIITA | Developer">
+	<meta name="twitter:image" content="https://jarvi-life.s3.us-east-1.amazonaws.com/jarvi.webp">
+	<meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+    <link rel="icon" type="image/x-icon" href="{{favicon}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,418&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #5A6065;
+            font-family: 'Lora', serif;
+            color: white;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            padding: 0 30px;
+        }
+        .section{
+            padding: 30px 20px;
+        }
+        a{
+            color: white;
+            font-family: 'Lora', serif;
+        }
+        .jarvi-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .jarvi-image{
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            width: 100%;
+        }
+        .single-row img{
+            width: 100%;
+        }
+        .jarvi-images div{
+            margin: 20px 0 40px;
+            text-align: center;
+        }
+        .double-row{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-gap: 10%;
+        } 
+        .double-row img{
+            width: 100%;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .company-logos{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .company-logos div{
+            padding: 10px;
+        }
+        .company-logos div img{
+            width: 100%;
+        }
+        ul{
+            line-height: 2rem;
+        }
+        form{
+            text-align: center;
+        }
+        form input{
+            width: min(100%, 400px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button{
+            width: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    {% block top_section %}
+        <div class="section">
+            <h1>it's {{name}} 🏄</h1>
+            <h2><a href="{{link}}" target="_blank">{{link_text}} </a></h2>
+        </div>
+    {% endblock %}
+    
+    {% block body %}
+        <div>Base</div>
+    {% endblock %}
+    
+    <div class="section">
+        <h2>Few points:</h2>
+        <ul>
+            {% for row in few_points %}
+            <li>{{row.content}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <hr />
+
+    <div class="section">
+        <p>No CSS</p>
+        <p>only ♡</p>
+        <p><span id="clock"></span></p>
+        <p>Copyright - {{copyright}}</p>
+    </div>
+
+    <script>
+        var clockElement = document.getElementById( "clock" );
+        function updateClock ( clock ) {
+            clock.innerHTML = new Date().toLocaleString();
+        }
+        setInterval(function () {
+            updateClock( clockElement );
+        }, 1000);
+    </script>
+</body>
+</html>
